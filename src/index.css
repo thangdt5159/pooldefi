@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  overflow-y: overlay;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.wrapper .landing-header {
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.wrapper .landing-header .background-image {
+  transform: translateZ(-10px) scale(2);
+}
+
+.wrapper .landing-header .background-image div {
+  background-image: linear-gradient(
+    90deg,
+    #000dff 25%,
+    rgba(0, 13, 255, 0.35) 75%
+  );
+}
+
+.wrapper .landing-header .landing-title {
+  transform: translateZ(-5px) scale(0.5);
+}
+.wrapper .landing-header .landing-des {
+  transform: translateZ(-5px) scale(0.5);
+}
+
+.footer-slider .slick-dots {
+  color: white;
+  bottom: -100px;
+}
+
+.footer-slider .slick-dots li button:before{
+  color: white;
+}
+
+.footer-slider .slick-dots li button:before{
+  color: white;
+}
+
+.footer-slider .slick-dots li.slick-active button:before{
+  color: white;
+}
