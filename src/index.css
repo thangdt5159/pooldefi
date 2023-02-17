@@ -37,14 +37,20 @@
   bottom: -100px;
 }
 
-.footer-slider .slick-dots li button:before{
+/* @media (max-width: 768px) {
+  .footer-slider .slick-dots {
+    bottom: 0;
+  }
+} */
+
+.footer-slider .slick-dots li button:before {
   color: white;
 }
 
-.footer-slider .slick-dots li button:before{
+.footer-slider .slick-dots li button:before {
   color: white;
 }
 
-.footer-slider .slick-dots li.slick-active button:before{
+.footer-slider .slick-dots li.slick-active button:before {
   color: white;
 }
