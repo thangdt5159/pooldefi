@@ -15,7 +15,7 @@ const Footer = () => {
     {
       id: 2,
       title:
-        "Staking the $climb token for longer periods of time will lower the tax you pay when unstaking your tokens. If you unstake any amount of your staked $climb tokens your tax resets to the highest level of 10%.",
+        "Staking the $PD token for longer periods of time will lower the tax you pay when unstaking your tokens. If you unstake any amount of your staked $PD tokens your tax resets to the highest level of 10%.",
       value: "Dynamic Unstake tax",
     },
   ];

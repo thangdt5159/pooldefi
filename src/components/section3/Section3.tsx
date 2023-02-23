@@ -69,7 +69,12 @@ const Section3 = () => {
             </button>
           </div>
         </div>
-        <Image
+        <div
+          className={`mt-[30px] w-[450px] h-[270px] bg-blue-500 transition-all duration-1000 ${
+            titleInView ? "rotate-0 opacity-100" : "opacity-0 rotate-45"
+          }`}
+        ></div>
+        {/* <Image
           src="/images/climb-token.png"
           alt=""
           width={500}
@@ -77,7 +82,7 @@ const Section3 = () => {
           className={`mt-[30px] md:mt-0 mr-[-130px] md:w-[450px] md:h-[270px] transition-all duration-1000 ${
             titleInView ? "rotate-0 opacity-100" : "opacity-0 rotate-45"
           }`}
-        />
+        /> */}
       </div>
       <Sub />
       <div

@@ -47,9 +47,6 @@
   color: white;
 }
 
-.footer-slider .slick-dots li button:before {
-  color: white;
-}
 
 .footer-slider .slick-dots li.slick-active button:before {
   color: white;

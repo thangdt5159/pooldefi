@@ -19,7 +19,7 @@ const Presale = () => {
       id: 3,
       title: "PUBLIC LAUNCH",
       content:
-        "The public launch of Ascend Finance will happen within 48 hours after 2nd Presale. The $climb token can be purchased on Pancakeswap.finance.",
+        "The public launch of Ascend Finance will happen within 48 hours after 2nd Presale. The $PD token can be purchased on Pancakeswap.finance.",
     },
   ];
 
