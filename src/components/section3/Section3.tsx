@@ -23,11 +23,15 @@ const Section3 = () => {
       }
     });
 
+    const titleObserverRef = titleRef.current
+    const btmObserverRef = btmRef.current
+
     titleObserver.observe(titleRef.current);
     btmObserver.observe(btmRef.current);
+
     return () => {
-      titleObserver.unobserve(titleRef.current);
-      btmObserver.unobserve(btmRef.current);
+      titleObserver.unobserve(titleObserverRef);
+      btmObserver.unobserve(btmObserverRef);
     };
   }, []);
 

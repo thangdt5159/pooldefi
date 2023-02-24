@@ -62,14 +62,18 @@ const Footer = () => {
       }
     });
 
+    const titleObserverRef = titleRef.current;
+    const btmObserverRef = btmRef.current;
+    const contentObserverRef = contentRef.current;
+
     titleObserver.observe(titleRef.current);
     btmObserver.observe(btmRef.current);
     contentObserver.observe(contentRef.current);
 
     return () => {
-      titleObserver.unobserve(titleRef.current);
-      btmObserver.unobserve(btmRef.current);
-      contentObserver.unobserve(contentRef.current);
+      titleObserver.unobserve(titleObserverRef);
+      btmObserver.unobserve(btmObserverRef);
+      contentObserver.unobserve(contentObserverRef);
     };
   }, []);
 

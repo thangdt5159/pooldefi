@@ -42,12 +42,15 @@ const Presale = () => {
       }
     });
 
+    const imgObserverRef = imageRef.current;
+    const btnObserverRef = btnRef.current;
+
     imageObserver.observe(imageRef.current);
     btnObserver.observe(btnRef.current);
 
     return () => {
-      imageObserver.unobserve(imageRef.current);
-      btnObserver.unobserve(btnRef.current);
+      imageObserver.unobserve(imgObserverRef);
+      btnObserver.unobserve(btnObserverRef);
     };
   }, []);
 

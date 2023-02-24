@@ -12,8 +12,11 @@ const Sub = () => {
       }
     });
 
+    const titleObserverRef = titleRef.current;
+
     titleObserver.observe(titleRef.current);
-    return () => titleObserver.unobserve(titleRef.current);
+
+    return () => titleObserver.unobserve(titleObserverRef);
   }, []);
 
   return (

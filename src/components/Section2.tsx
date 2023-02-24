@@ -13,8 +13,11 @@ const Section2 = () => {
         setIsInView(entry.isIntersecting);
       }
     });
+
+    const sectionObserverRef = section2Ref.current;
     observer.observe(section2Ref.current);
-    return () => observer.unobserve(section2Ref.current);
+
+    return () => observer.unobserve(sectionObserverRef);
   }, []);
 
   return (
